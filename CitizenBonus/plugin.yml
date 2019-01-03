@@ -2,3 +2,6 @@ name: CitizenBonus
 version: 1.0
 author: StoneBurger
 main: fr.stoneburger.citizenbonus.Main
+commands:
+  updateskins:
+    
