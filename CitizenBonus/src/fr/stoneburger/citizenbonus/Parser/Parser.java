@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class Parser {
-		
+	//le parser de l'amour	
 	public static void main (String[] args) throws IOException {
 		Yaml yaml = new Yaml();
         try (InputStream in = Parser.class.getResourceAsStream("test.yml")) {
