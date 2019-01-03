@@ -5,14 +5,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import fr.stoneburger.citizenbonus.commands.CommandUpdate;
 
 public class Main extends JavaPlugin {
-	
-	private static Main instance;
 	 
 	@Override
 	public void onEnable() {
-		instance = this;
 		System.out.println("start");
-		getCommand("updateskins").setExecutor(new CommandUpdate());
+		getCommand("updateskins").setExecutor(new CommandUpdate(this));
 	}
 	 
 	@Override
@@ -20,8 +17,5 @@ public class Main extends JavaPlugin {
 		System.out.println("stop");
 	}
 	 
-	public static Main getInstance() {
-		return instance;
-	}
 
 }
